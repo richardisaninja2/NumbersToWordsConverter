@@ -20,6 +20,7 @@ class ConvertListOneToSevenToColumnsTest {
         System.out.println(aString);
 
         assertEquals(aString, convertListOneToSevenToColumns.convertFileToString(), "Should return correct String.");
+        assertNotEquals("", convertListOneToSevenToColumns.convertFileToString());
     }
 
     @org.junit.jupiter.api.AfterEach

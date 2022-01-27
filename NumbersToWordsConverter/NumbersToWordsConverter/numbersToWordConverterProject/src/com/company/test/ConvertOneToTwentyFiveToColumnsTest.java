@@ -28,8 +28,9 @@ class ConvertOneToTwentyFiveToColumnsTest {
                 "nine eighteen\n";
 
         System.out.println(aString);
-        
+
         assertEquals(aString, convertOneToTwentyFiveToColumns.convertFileToString(), "Should return correct String.");
+        assertNotEquals("", convertOneToTwentyFiveToColumns.convertFileToString(), "Should return incorrect String.");
     }
 
     @AfterEach
