@@ -14,9 +14,10 @@ public class ConvertOneToTwentyFiveToColumns implements Converter{
      * This method is intended for 1 to  25 lines, but can be adjusted.
      * This method will read the current line of the file. Starting with line 1.
      * Next, find the next two lines in increments of 9 and append to line 1.
-     * For example, lines 1, 10, and 19 will append to create one String
-     * Then write the new String to another file.
-     * This loop end before and IndexOutOfBounds is achieved.
+     * For example, lines 1, 10, and 19 will append to create one String this will go on until line 7
+     * After line 7 you start just appending lines i and line (i + 9) so it will look like Seven Sixteen and so on
+     * After that then turn the list into a String to write to a new file
+     * In the file write you truncate the previous entry
      */
     public String convertFileToString() throws IOException {
         //Create list containing 25 elements
